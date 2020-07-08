@@ -64,5 +64,8 @@ if (spons.toLocaleLowerCase() !== sponsarray[0].toLocaleLowerCase() || spons.toL
 console.log("user score is "+ sum)
 alert("Your score is " + sum)
 ```
-
-
+```
+we added a function for each question: 
+**Driver** Aya Akrabawi
+**Navigator** Malek Hassan
+``` 
