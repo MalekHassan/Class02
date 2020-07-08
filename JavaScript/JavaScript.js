@@ -4,7 +4,7 @@ function Q1 () {
 var name = prompt('what is your name?')
 console.log('You are welcome ' + name)
 alert('You are welcome ' + name)}
-function q2() {
+function Q2() {
 var Bacholr = prompt('Do I have a Bacholr degree')
 while (Bacholr.toLocaleLowerCase() !== "yes" && Bacholr.toLocaleLowerCase() !== "no") {
     Bacholr = prompt("please, if I have a Bachlor degree answer with yes if I do not answer no")
@@ -20,7 +20,7 @@ console.log('for the The Education quaistion the user answer was ' + Bacholr)
 alert('for the The Education quaistion your answer was ' + Bacholr)
 console.log("user score is "+ sum)
 }
-function q3() {
+function Q3() {
 var job = prompt('Do I have a Job??')
 while (job.toLocaleLowerCase() !== "yes" && job.toLocaleLowerCase() !== "no") {
     job = prompt("please, if you have a job answer with yes if you do not have one answer no")
@@ -137,4 +137,12 @@ if (spons.toLocaleLowerCase() !== sponsarray[0].toLocaleLowerCase() || spons.toL
 }
 console.log("user score is "+ sum)
 }
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
+Q6();
+Q7();
+Q8();
 alert("Your score is " + sum)
