@@ -89,28 +89,29 @@ function q6 (){
 }
 
 function q7 (){
-
+  var correct=0;
   for (var i = 0; i < 4; i++) {
     var rank = prompt('what is Liverpool team ranked globally ??');
     console.log('the user guess number was' + rank);
 
-    if (rank < 6) {
+    if (rank < 6 ) {
       alert('Too high rank, they are not that good!! Guess a lower rank, let us try again!! ');
       console.log('High rank answer');
     }
-    else if (rank > 6) {
+    if (rank > 6 ) {
       alert('Too low rank, they are not that bad!! Guess a heighr rank, let us try again!! ');
       console.log('Low rank answer');
     }
-    else if (rank === 6) {
+    if (rank == 6) {
       alert('You are right, let us check the ranks for some football clubs togather !!');
       console.log('Correct answer');
       sum++;
+      correct++;
       break;
     }
-    if (i === 4) {
-      alert('There rank is 6th on the world');
-    }
+  }
+  if (correct !==1){
+    alert ( 'you have finished your attempts and the true answer is 6');
   }
   console.log('user score is '+ sum);
 }
