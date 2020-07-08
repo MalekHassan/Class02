@@ -1,8 +1,10 @@
 'use strict'
 var sum=0
+function Q1 () {
 var name = prompt('what is your name?')
 console.log('You are welcome ' + name)
-alert('You are welcome ' + name)
+alert('You are welcome ' + name)}
+function Q2() {
 var Bacholr = prompt('Do I have a Bacholr degree')
 while (Bacholr.toLocaleLowerCase() !== "yes" && Bacholr.toLocaleLowerCase() !== "no") {
     Bacholr = prompt("please, if I have a Bachlor degree answer with yes if I do not answer no")
@@ -17,7 +19,8 @@ if (Bacholr.toLocaleLowerCase() == 'no') {
 console.log('for the The Education quaistion the user answer was ' + Bacholr)
 alert('for the The Education quaistion your answer was ' + Bacholr)
 console.log("user score is "+ sum)
-
+}
+function Q3() {
 var job = prompt('Do I have a Job??')
 while (job.toLocaleLowerCase() !== "yes" && job.toLocaleLowerCase() !== "no") {
     job = prompt("please, if you have a job answer with yes if you do not have one answer no")
@@ -32,7 +35,9 @@ if (job.toLocaleLowerCase() == 'no') {
 console.log("for the job quaistion was the user answer was " + job)
 alert('your answer for the job quaistion was ' + job)
 console.log("user score is "+ sum)
+}
 
+function Q4(){
 var like = prompt('Do I like my Job??')
 while (like.toLocaleLowerCase() !== "yes" && like.toLocaleLowerCase() !== "no") {
     like = prompt("please, if you like your job answer with yes if you do not answer whith no")
@@ -47,7 +52,8 @@ if (like.toLocaleLowerCase() == 'no') {
 console.log('The answer for liking my job was ' + like)
 alert('your answer for liking my job was ' + like)
 console.log("user score is "+ sum)
-
+}
+function Q5 (){
 var live = prompt('Do I live in Jordan??')
 while (live.toLocaleLowerCase() !== "yes" && live.toLocaleLowerCase() !== "no") {
     live = prompt("please, if you live in Jordan answer with yes if you do not answer whith no")
@@ -62,6 +68,8 @@ if (live.toLocaleLowerCase() == 'no') {
 console.log('the answer for living in Jordan quastion was ' + live)
 alert('your answer for living in Jordan was ' + live)
 console.log("user score is "+ sum)
+}
+function Q6 (){
 
 var ball = prompt('Do I wach football??')
 while (ball.toLocaleLowerCase() !== "yes" && ball.toLocaleLowerCase() !== "no") {
@@ -78,6 +86,9 @@ if (ball.toLocaleLowerCase() == 'no') {
 console.log('The answer for watching football was ' + ball)
 alert('your answer for watching football quastion was ' + ball)
 console.log("user score is "+ sum)
+}
+
+function Q7 (){
 
 for (var i = 0; i < 4; i++) {
     var rank = prompt("what is Liverpool team ranked globally ??");
@@ -102,7 +113,8 @@ for (var i = 0; i < 4; i++) {
     }
 }
 console.log("user score is "+ sum)
-
+}
+function Q8 (){
 
 var sponsarray = ["Jeep", "KIA", "Ford", "Mitsubeshi", "Toyota","Audi"];
 for (var y = 0; y < 6; y++) {
@@ -124,4 +136,13 @@ if (spons.toLocaleLowerCase() !== sponsarray[0].toLocaleLowerCase() || spons.toL
 
 }
 console.log("user score is "+ sum)
+}
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
+Q6();
+Q7();
+Q8();
 alert("Your score is " + sum)
