@@ -2,7 +2,6 @@
 var sum=0;
 function q1 () {
   var name = prompt('what is your name?');
-  console.log('You are welcome ' + name);
   alert('You are welcome ' + name);}
 function q2() {
   var Bacholr = prompt('Do I have a Bacholr degree');
@@ -18,7 +17,6 @@ function q2() {
   }
   console.log('for the The Education quaistion the user answer was ' + Bacholr);
   alert('for the The Education quaistion your answer was ' + Bacholr);
-  console.log('user score is '+ sum);
 }
 function q3() {
   var job = prompt('Do I have a Job??');
@@ -32,9 +30,7 @@ function q3() {
   if (job.toLocaleLowerCase() === 'no') {
     alert('No I do not ' + name + ' !!');
   }
-  console.log('for the job quaistion was the user answer was ' + job);
   alert('your answer for the job quaistion was ' + job);
-  console.log('user score is '+ sum);
 }
 
 function q4(){
@@ -49,9 +45,7 @@ function q4(){
   if (like.toLocaleLowerCase() === 'no') {
     alert('No ' + name + ' I like it !!');
   }
-  console.log('The answer for liking my job was ' + like);
   alert('your answer for liking my job was ' + like);
-  console.log('user score is '+ sum);
 }
 function q5 (){
   var live = prompt('Do I live in Jordan??');
@@ -65,9 +59,7 @@ function q5 (){
   if (live.toLocaleLowerCase() === 'no') {
     alert('No I live Jordan ' + name + '!!, It is a great country');
   }
-  console.log('the answer for living in Jordan quastion was ' + live);
   alert('your answer for living in Jordan was ' + live);
-  console.log('user score is '+ sum);
 }
 function q6 (){
 
@@ -85,26 +77,20 @@ function q6 (){
   }
   console.log('The answer for watching football was ' + ball);
   alert('your answer for watching football quastion was ' + ball);
-  console.log('user score is '+ sum);
 }
 
 function q7 (){
   var correct=0;
   for (var i = 0; i < 4; i++) {
     var rank = prompt('what is Liverpool team ranked globally ??');
-    console.log('the user guess number was' + rank);
-
     if (rank < 6 ) {
       alert('Too high rank, they are not that good!! Guess a lower rank, let us try again!! ');
-      console.log('High rank answer');
     }
     if (rank > 6 ) {
       alert('Too low rank, they are not that bad!! Guess a heighr rank, let us try again!! ');
-      console.log('Low rank answer');
     }
-    if (rank == 6) {
+    if (rank === 6) {
       alert('You are right, let us check the ranks for some football clubs togather !!');
-      console.log('Correct answer');
       sum++;
       correct++;
       break;
@@ -113,7 +99,6 @@ function q7 (){
   if (correct !==1){
     alert ( 'you have finished your attempts and the true answer is 6');
   }
-  console.log('user score is '+ sum);
 }
 function q8 (){
 
@@ -122,21 +107,17 @@ function q8 (){
     var spons = prompt('What is the official sponsor of Juventus club (Please choose one of those brands ' + sponsarray + ' )');
     if (spons.toLocaleLowerCase() === sponsarray[0].toLocaleLowerCase() || spons.toLocaleLowerCase() === sponsarray[1].toLocaleLowerCase()) {
       alert('Jeep or Kia are both correct');
-      console.log('the user answer was '+spons+' and it was corrent !!');
       sum++;
       break;
     }
     if (spons.toLocaleLowerCase() !== sponsarray[0].toLocaleLowerCase() || spons.toLocaleLowerCase() !== sponsarray[1].toLocaleLowerCase()) {
-      console.log('the user answer was '+spons+' and it was wrong !!');
       alert('No it is not ' + spons);
     }
   }
   if (spons.toLocaleLowerCase() !== sponsarray[0].toLocaleLowerCase() || spons.toLocaleLowerCase() !== sponsarray[1].toLocaleLowerCase()) {
-    console.log('the user did not choose the right asnwer so I have to inform him with it');
     alert('The right answer was '+sponsarray[0]+ ' and '+sponsarray[1]);
 
   }
-  console.log('user score is '+ sum);
 }
 q1();
 q2();
