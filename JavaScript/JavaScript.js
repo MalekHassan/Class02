@@ -15,8 +15,8 @@ function q2() {
   if (Bacholr.toLocaleLowerCase() === 'no') {
     alert('Wrong answer ' + name + ' I have one!!');
   }
-  console.log('for the The Education quaistion the user answer was ' + Bacholr);
-  alert('for the The Education quaistion your answer was ' + Bacholr);
+  console.log('for the The Education question the user answer was ' + Bacholr);
+  alert('for the The Education question your answer was ' + Bacholr);
 }
 function q3() {
   var job = prompt('Do I have a Job??');
@@ -30,7 +30,7 @@ function q3() {
   if (job.toLocaleLowerCase() === 'no') {
     alert('No I do not ' + name + ' !!');
   }
-  alert('your answer for the job quaistion was ' + job);
+  alert('your answer for the job question was ' + job);
 }
 
 function q4(){
